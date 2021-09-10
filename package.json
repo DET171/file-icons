@@ -1,8 +1,7 @@
 {
   "name": "atom-file-icons",
-  "main": "./lib/atom-file-icons",
-  "version": "0.7.1",
-  "description": "logo style icons and ui tweaks to mirror vscode",
+  "version": "0.0.0",
+  "description": "[Forked from atom-file-icons] Logo style icons and ui tweaks to mirror vscode",
   "keywords": [
     "icons",
     "file-icons",
@@ -21,7 +20,7 @@
   "repository": "https://github.com/donovanhiland/atom-file-icons",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.0.0"
   },
   "dependencies": {}
 }
