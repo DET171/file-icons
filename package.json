@@ -10,7 +10,7 @@
     "tree-view",
     "tabs"
   ],
-  "repository": "https://github.com/DET171/file-type-icons",
+  "repository": "https://github.com/DET171/file-icons",
   "license": "MIT",
   "engines": {
     "atom": ">=1.6.0"
