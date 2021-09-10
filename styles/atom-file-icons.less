@@ -277,7 +277,9 @@
 
 	[data-name$=".bash_profile"]:before,
 	[data-name$=".bashrc"]:before,
-	[data-name$=".sh"]:before
+	[data-name$=".sh"]:before,
+	[data-name$=".bat"]:before,
+	[data-name$=".cmd"]:before,
 	[data-name$=".ksh"]:before,
 	[data-name$=".zsh"]:before,
 	[data-name$=".csh"]:before,
@@ -294,9 +296,6 @@
 	[data-name=".logout"]:before,
 	[data-name=".login"]:before,
 	[data-name=".zprofile"]:before,
-	[data-name$=".sh"]:before,
-	[data-name$=".bat"]:before,
-	[data-name$=".cmd"]:before,
 	[data-name=".zshenv"]:before,
 	[data-name=".zlogin"]:before,
 	[data-name=".zlogout"]:before {
@@ -414,7 +413,8 @@
 		.file-icon(gitlab);
 	}
 
-	[data-name="circle.yml"]:before {
+	[data-name="circle.yml"]:before,
+	[data-name="circle-ci.yml"]:before {
 		.file-icon(circle-ci);
 	}
 
