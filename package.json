@@ -1,6 +1,6 @@
 {
   "name": "file-icons-types",
-  "version": "7.0.0",
+  "version": "5.0.0",
   "description": "[Forked from atom-file-icons] Logo style icons and ui tweaks to mirror vscode",
   "keywords": [
     "icons",
@@ -17,7 +17,7 @@
     "vsc",
     "vscode-icons"
   ],
-  "repository": "https://github.com/donovanhiland/atom-file-icons",
+  "repository": "https://github.com/DET171/file-icons",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0"
