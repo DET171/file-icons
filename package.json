@@ -1,6 +1,6 @@
 {
   "name": "file-icons",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "[Forked from unmaintained `file-type-icons`] Changes the icon for files in the Tree View and Tabs to reflect the file's type",
   "author": "Dusty <mrgeek484@gmail.com>",
   "keywords": [
