@@ -418,7 +418,7 @@
 		.file-icon(circle-ci);
 	}
 
-	[data-name="karma.conf"]:before {
+	[data-name^="karma.conf"]:before {
 		.file-icon(karma);
 	}
 
@@ -484,6 +484,10 @@
 
 	[data-name$=".sequelizerc"]:before {
 		.file-icon(sequelize);
+	}
+
+	[data-name$=".svelte"]:before {
+		.file-icon(svelte);
 	}
 
 	[data-name^="brunch-config"]:before {
