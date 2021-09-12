@@ -1,3 +1,6 @@
+## 8.4.x
+* Working on grammar selector icons
+
 ## 8.3.0
 Sorry for missing changelog...but yeah here you go:
 * Added `.mjs`, `.cjs`, `sqlite`, `svelte` and `sqlite3` icons
