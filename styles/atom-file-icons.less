@@ -615,7 +615,9 @@
      li[data-grammar^="Sass"]:before,
      li[data-grammar^="SCSS"]:before { .grammar-icon(sass); }
      li[data-grammar*="Javascript"]:before,
-     li[data-grammar*="JavaScript"]:before { .grammar-icon(javascript); }
+     li[data-grammar^="JavaScript"]:before { .grammar-icon(javascript); }
+		 li[data-grammar*="TypeScript"]:before,
+     li[data-grammar^="TypeScript"]:before { .grammar-icon(ts); }
      li[data-grammar^="Git "]:before { .grammar-icon(git); }
      li[data-grammar^="Ruby"]:before { .grammar-icon(ruby); }
      li[data-grammar^="Twig"]:before { .grammar-icon(twig); }
