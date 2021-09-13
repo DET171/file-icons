@@ -578,6 +578,10 @@
 			.file-icon(meteor);
 		}
 
+		[data-name*=".babelrc"]:before {
+			.file-icon(babel);
+		}
+
 		[data-name$=".git"]:before {
 			.file-icon(git2);
 		}
@@ -610,7 +614,7 @@
      li[data-grammar^="HTML"]:before { .grammar-icon(html5); }
 		 li[data-grammar^="C++"]:before,
 		 li[data-grammar^="Objective-C++"]:before { .grammar-icon(cpp); }
-		 li[data-grammar^="C#"]:before { .grammar-icon(cs); }
+		 li[data-grammar*="C#"]:before { .grammar-icon(cs); }
 		 li[data-grammar="C"]:before,
 		 li[data-grammar*="Objective-C"]:before { .grammar-icon(c); }
      li[data-grammar^="Less"]:before { .grammar-icon(less); }
@@ -642,6 +646,8 @@
 		 li[data-grammar*="Rust"]:before { .grammar-icon(rust); }
 		 li[data-grammar*="YAML"]:before { .grammar-icon(yaml); }
 		 li[data-grammar*="Stylus"]:before { .grammar-icon(stylus); }
+		 li[data-grammar*="Markdown"]:before { .grammar-icon(markdown); }
+		 li[data-grammar*="CSS"]:before { .grammar-icon(css); }
 
 
      // GRAMMAR LIST:
