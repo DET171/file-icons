@@ -81,6 +81,7 @@
 
 .fuzzy-finder .list-group,
 .tab,
+.title,
 .tree-view .file {
 	[data-name$=".env"]:before,
 	[data-name^="config"]:before,
@@ -614,7 +615,7 @@
      li[data-grammar^="HTML"]:before { .grammar-icon(html5); }
 		 li[data-grammar^="C++"]:before,
 		 li[data-grammar^="Objective-C++"]:before { .grammar-icon(cpp); }
-		 li[data-grammar*="C#"]:before { .grammar-icon(cs); }
+		 li[data-grammar*="C#"]:before { .grammar-icon(cs); } /* not working? */
 		 li[data-grammar="C"]:before,
 		 li[data-grammar*="Objective-C"]:before { .grammar-icon(c); }
      li[data-grammar^="Less"]:before { .grammar-icon(less); }
