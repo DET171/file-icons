@@ -1,4 +1,4 @@
-## 8.4.x
+## 8.4.x - 8.6.x
 * Working on grammar selector icons
 
 ## 8.3.0

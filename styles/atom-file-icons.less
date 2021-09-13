@@ -25,7 +25,7 @@
 	float: left;
 	height: 1.7em;
 	width: 1.7em;
-	margin-top: 0.15em;
+	margin-top: 0.37em;
 }
 
 .tree-view .selected:before {
@@ -608,20 +608,23 @@
 
      li[data-grammar^="Java"]:before { .grammar-icon(java); }
      li[data-grammar^="HTML"]:before { .grammar-icon(html5); }
-		 li[data-grammar^="C++"]:before { .grammar-icon(cpp); }
+		 li[data-grammar^="C++"]:before,
+		 li[data-grammar^="Objective-C++"]:before { .grammar-icon(cpp); }
 		 li[data-grammar^="C#"]:before { .grammar-icon(cs); }
-		 li[data-grammar^="C"]:before { .grammar-icon(c); }
+		 li[data-grammar="C"]:before,
+		 li[data-grammar*="Objective-C"]:before { .grammar-icon(c); }
      li[data-grammar^="Less"]:before { .grammar-icon(less); }
      li[data-grammar^="Sass"]:before,
      li[data-grammar^="SCSS"]:before { .grammar-icon(sass); }
      li[data-grammar*="Javascript"]:before,
-     li[data-grammar^="JavaScript"]:before { .grammar-icon(javascript); }
+     li[data-grammar*="JavaScript"]:before { .grammar-icon(javascript); }
 		 li[data-grammar*="TypeScript"]:before,
      li[data-grammar^="TypeScript"]:before { .grammar-icon(ts); }
      li[data-grammar^="Git "]:before { .grammar-icon(git); }
-     li[data-grammar^="Ruby"]:before { .grammar-icon(ruby); }
+     li[data-grammar*="Ruby"]:before,
+		 li[data-grammar^="Gemfile"]:before { .grammar-icon(ruby); }
      li[data-grammar^="Twig"]:before { .grammar-icon(twig); }
-     li[data-grammar^="Python"]:before { .grammar-icon(python); }
+     li[data-grammar*="Python"]:before { .grammar-icon(python); }
      li[data-grammar^="Shell"]:before { .grammar-icon(bash); }
      li[data-grammar="Go"]:before,
      li[data-grammar^="Go "]:before { .grammar-icon(go); }
@@ -633,6 +636,13 @@
      li[data-grammar^="Clojure"]:before { .grammar-icon(clojure); }
      li[data-grammar^="SQL"]:before { .grammar-icon(database); }
      li[data-grammar^="PHP"]:before { .grammar-icon(php); }
+		 li[data-grammar*="Vue"]:before { .grammar-icon(vue); }
+		 li[data-grammar*="Batch"]:before { .grammar-icon(bash); }
+		 li[data-grammar*="AutoHotKey"]:before { .grammar-icon(ahk); }
+		 li[data-grammar*="Rust"]:before { .grammar-icon(rust); }
+		 li[data-grammar*="YAML"]:before { .grammar-icon(yaml); }
+		 li[data-grammar*="Stylus"]:before { .grammar-icon(stylus); }
+
 
      // GRAMMAR LIST:
      /*
