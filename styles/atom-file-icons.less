@@ -38,10 +38,6 @@
 	width: 1em;
 }
 
-.icon-file-text:before {
-	.file-icon(default_file)
-}
-
 .icon-file-directory:before {
 	.file-icon(default_folder)
 }
@@ -82,6 +78,7 @@
 .fuzzy-finder .list-group,
 .tab,
 .title,
+.icon-file-text,
 .tree-view .file {
 	[data-name$=".env"]:before,
 	[data-name^="config"]:before,
@@ -121,6 +118,10 @@
 
 	[data-name$=".vue"]:before {
 		.file-icon(vue);
+	}
+
+	[data-name$=".ejs"]:before {
+		.file-icon(ejs);
 	}
 
 	[data-name$=".json"]:before,
@@ -534,6 +535,14 @@
 	[data-name$=".jmd"]:before {
 		.file-icon(julia);
 	}
+
+	[data-name$=".toml"]:before {
+		.file-icon(toml);
+	}
+
+	[data-name$=".jsdoc"]:before {
+		.file-icon(jsdoc);
+	}
 }
 
 .tree-view {
@@ -613,11 +622,11 @@
 
      li[data-grammar^="Java"]:before { .grammar-icon(java); }
      li[data-grammar^="HTML"]:before { .grammar-icon(html5); }
+		 li[data-grammar*="C#"]:before { .grammar-icon(cs); } /* not working? */
+		 li[data-grammar*="C"]:before, /* substitute for C# icon */
+		 li[data-grammar*="Objective-C"]:before { .grammar-icon(c); }
 		 li[data-grammar^="C++"]:before,
 		 li[data-grammar^="Objective-C++"]:before { .grammar-icon(cpp); }
-		 li[data-grammar*="C#"]:before { .grammar-icon(cs); } /* not working? */
-		 li[data-grammar="C"]:before,
-		 li[data-grammar*="Objective-C"]:before { .grammar-icon(c); }
      li[data-grammar^="Less"]:before { .grammar-icon(less); }
      li[data-grammar^="Sass"]:before,
      li[data-grammar^="SCSS"]:before { .grammar-icon(sass); }
@@ -625,8 +634,10 @@
      li[data-grammar*="JavaScript"]:before { .grammar-icon(javascript); }
 		 li[data-grammar*="TypeScript"]:before,
      li[data-grammar^="TypeScript"]:before { .grammar-icon(ts); }
+		 li[data-grammar*="React"]:before { .grammar-icon(ts); }
      li[data-grammar^="Git "]:before { .grammar-icon(git); }
      li[data-grammar*="Ruby"]:before,
+		 li[data-grammar*="ERB"]:before,
 		 li[data-grammar^="Gemfile"]:before { .grammar-icon(ruby); }
      li[data-grammar^="Twig"]:before { .grammar-icon(twig); }
      li[data-grammar*="Python"]:before { .grammar-icon(python); }
@@ -649,7 +660,9 @@
 		 li[data-grammar*="Stylus"]:before { .grammar-icon(stylus); }
 		 li[data-grammar*="Markdown"]:before { .grammar-icon(markdown); }
 		 li[data-grammar*="CSS"]:before { .grammar-icon(css); }
-
+		 li[data-grammar*="EJS"]:before { .grammar-icon(ejs); }
+		 li[data-grammar*="TOML"]:before { .grammar-icon(toml); }
+		 li[data-grammar*="JSDoc"]:before { .grammar-icon(jsdoc); }
 
      // GRAMMAR LIST:
      /*
