@@ -1,7 +1,7 @@
 {
   "name": "file-icons-types",
   "version": "8.5.0",
-  "description": "[Forked from atom-file-icons] Logo style icons and ui tweaks to mirror vscode",
+  "description": "[Forked from atom-file-icons] Logo style icons and ui tweaks for tabs, fuzzy finder and tree view",
   "keywords": [
     "icons",
     "file-icons",
@@ -22,5 +22,11 @@
   "engines": {
     "atom": ">=1.0.0"
   },
-  "dependencies": {}
+  "scripts": {
+    "lint": "lessc --lint --js styles/atom-file-icons.less",
+    "compile": "lessc styles/atom-file-icons.less dist/atom-file-icons.css"
+  },
+  "devDependencies": {
+    "less": "^4.1.1"
+  }
 }
